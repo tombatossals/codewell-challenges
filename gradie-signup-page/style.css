@@ -1,0 +1,181 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+form {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.13rem;
+}
+
+.card {
+  min-width: 360px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.card__hero {
+  background: #013243;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.card__title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+.card__description {
+  color: #86bfd3;
+  font-size: 1.125rem;
+}
+
+.card__image {
+  margin-top: -120px;
+  max-width: 100%;
+  object-fit: fill;
+}
+
+.card__content {
+  padding: 2.81rem 3.2rem;
+  background: white;
+}
+
+.card__content > h2 {
+  font-size: 2.25rem;
+}
+
+.form__group {
+  padding-top: 1.4rem;
+}
+
+.form__group > label {
+  display: block;
+  font-weight: bold;
+}
+
+.form__group > input {
+  font-size: 1.13rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.315rem;
+  border: 1px solid #eee;
+  width: 100%;
+}
+
+.form__terms {
+  font-family: "Inter", sans-serif;
+  margin-top: 1.4rem;
+  display: block;
+  line-height: 1.7rem;
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form__terms > input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.form__terms > input[type="checkbox"]:focus + .checkmark {
+  border-color: #135bcf;
+}
+
+.form__terms > a {
+  font-weight: bold;
+  color: #013243;
+}
+
+.form__terms > .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form__terms > .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.form__terms > input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form__terms > .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__terms > .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 7px;
+  height: 12px;
+  border: solid #013243;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.form__button {
+  margin-top: 1.4rem;
+  background: #013243;
+  color: white;
+  font-size: 1.12rem;
+  width: 100%;
+  padding: 1.12rem;
+  border-radius: 0.315rem;
+  font-family: inherit;
+}
+
+@media (min-width: 481px) {
+  body {
+    background: url("./assets/Background.png") no-repeat fixed center;
+  }
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card__content {
+    border-radius: 0 0 1rem 1rem;
+    border: 1px solid #bcbcbc;
+    padding: 2.81rem 4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card {
+    display: flex;
+    width: 80%;
+    max-width: 840px;
+  }
+
+  .card__image {
+    margin-top: -85px;
+  }
+  .card__hero {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+  }
+  .card__content {
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+  }
+}

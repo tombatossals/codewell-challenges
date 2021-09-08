@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Login Page" />
+    <meta name="author" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Gradie - Login</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__hero">
+        <div class="card__header">
+          <h1 class="card__title">Gradie</h1>
+          <p class="card__description">Beautiful gradients in seconds.</p>
+        </div>
+        <img
+          class="card__image"
+          alt="Logo"
+          src="./assets/iPhone%20Mockup.png"
+        />
+      </div>
+      <div class="card__content">
+        <h2>Login</h2>
+        <form class="form" action="/">
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              tabindex="1"
+              placeholder="john@example.com"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              tabindex="2"
+              placeholder="At least 8 characters"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <label class="form__terms" for="terms">
+            <input id="terms" tabindex="3" type="checkbox" />
+            <span class="checkmark"></span>
+            By creating an account, you agree to the
+            <a href="">Terms &amp; Conditions.</a>
+          </label>
+          <button tabindex="4" type="submit" class="form__button">
+            Create an Account
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
