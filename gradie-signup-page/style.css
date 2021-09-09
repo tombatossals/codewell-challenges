@@ -160,7 +160,8 @@ form {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1025px),
+       (min-width: 481px) and (orientation: landscape) {
   .card {
     display: flex;
     width: 80%;
